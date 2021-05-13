@@ -1,0 +1,96 @@
+<h1>
+<a id="user-content-language-javascript-the-most-basic-and-entry-level-language-to-learn-i-think-_‿_" class="anchor" href="#language-javascript-the-most-basic-and-entry-level-language-to-learn-i-think-_%E2%80%BF_" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Language: Javascript (the most basic and entry level language to learn I think ¯_◉‿◉_/¯)</h1>
+<h2>
+<a id="user-content-key-concepts" class="anchor" href="#key-concepts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Key Concepts</h2>
+<h3>
+<a id="user-content-comments" class="anchor" href="#comments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Comments</h3>
+<p>To annotate your code or organize it</p>
+<h4>
+<a id="user-content-example" class="anchor" href="#example" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// Single-line comment</span>
+
+<span class="pl-c">/* Multiline</span>
+<span class="pl-c">comment */</span></pre></div>
+<h3>
+<a id="user-content-variable-or-var" class="anchor" href="#variable-or-var" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Variable or <code>var</code>
+</h3>
+<p>You can use variables to store and get data</p>
+<h4>
+<a id="user-content-example-1" class="anchor" href="#example-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">x</span><span class="pl-kos">;</span> <span class="pl-c">// to make the variable x but not put anything in it  </span>
+<span class="pl-k">var</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-c1">5</span><span class="pl-kos">;</span> <span class="pl-c">// a variable x with the value of the number 5 which can be changed</span>
+<span class="pl-k">const</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-c1">5</span><span class="pl-kos">;</span> <span class="pl-c">// a variable x with the value of the number which cant be changed </span>
+<span class="pl-k">var</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-s">'five'</span><span class="pl-kos">;</span> <span class="pl-c">// a variable x with the value of the string 'five' </span>
+<span class="pl-k">var</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-c1">1</span><span class="pl-kos">,</span> <span class="pl-c1">2</span><span class="pl-kos">,</span> <span class="pl-c1">3</span><span class="pl-kos">]</span><span class="pl-kos">;</span> <span class="pl-c">// a variable x with the value of a array with the contents of the numbers 1, 2, and 3 </span>
+<span class="pl-k">var</span> <span class="pl-s1">x</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">name</span>: <span class="pl-s">"John Doe"</span><span class="pl-kos">,</span>
+<span class="pl-kos">}</span> <span class="pl-c">// a variable x with the value of a object with the key:value pair of name to John Doe </span>
+<span class="pl-k">var</span> <span class="pl-en">x</span> <span class="pl-c1">=</span> <span class="pl-k">function</span> <span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'hello'</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span> <span class="pl-c">/* </span>
+<span class="pl-c">  a variable x with the value of a function when executed will print hello to the console </span>
+<span class="pl-c">  NOTE: if you have a variable with a function in it as a value, instead of doing 'x', you would do 'x()'</span>
+<span class="pl-c">*/</span></pre></div>
+<h3>
+<a id="user-content-functions" class="anchor" href="#functions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Functions</h3>
+<p>A chunk of code to do something</p>
+<h4>
+<a id="user-content-example-2" class="anchor" href="#example-2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">function</span> <span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">x</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+  <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s1">x</span><span class="pl-kos">)</span><span class="pl-kos">;</span>
+<span class="pl-kos">}</span> <span class="pl-c">// a function called log which when executed with a arguments (the x), it would execute console.log(x)</span>
+<span class="pl-c">/* You would run it by doing */</span>
+<span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'hello'</span><span class="pl-kos">)</span><span class="pl-kos">;</span> <span class="pl-c">/* which equals to */</span> <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">'hello'</span><span class="pl-kos">)</span><span class="pl-kos">;</span></pre></div>
+<h3>
+<a id="user-content-objects" class="anchor" href="#objects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Objects</h3>
+<p>Like a variable but is a collection of related data and/or functionality</p>
+<h4>
+<a id="user-content-example-3" class="anchor" href="#example-3" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">person</span> <span class="pl-c1">=</span> <span class="pl-kos">{</span>
+  <span class="pl-c1">firstName</span>: <span class="pl-s">"John"</span><span class="pl-kos">,</span>
+  <span class="pl-c1">lastName</span>: <span class="pl-s">"Doe"</span><span class="pl-kos">,</span>
+  <span class="pl-en">greeting</span>: <span class="pl-k">function</span><span class="pl-kos">(</span><span class="pl-kos">)</span> <span class="pl-kos">{</span>
+    <span class="pl-smi">console</span><span class="pl-kos">.</span><span class="pl-en">log</span><span class="pl-kos">(</span><span class="pl-s">"Hello! I'm "</span> <span class="pl-c1">+</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">firstName</span> <span class="pl-c1">+</span> <span class="pl-s">" "</span> <span class="pl-c1">+</span> <span class="pl-smi">this</span><span class="pl-kos">.</span><span class="pl-c1">lastName</span> <span class="pl-c1">+</span> <span class="pl-s">"."</span><span class="pl-kos">)</span>
+  <span class="pl-kos">}</span>
+<span class="pl-kos">}</span>
+
+<span class="pl-c">/* now if we wanted get the person's first name we would do */</span>
+<span class="pl-s1">person</span><span class="pl-kos">.</span><span class="pl-c1">firstName</span>
+<span class="pl-c">/* or if we wanted to get the person's last name we would do */</span>
+<span class="pl-s1">person</span><span class="pl-kos">.</span><span class="pl-c1">lastName</span>
+<span class="pl-c">/* --- NOTE --- </span>
+<span class="pl-c"> * you dont have to put a dot; you can also do person['lastName'] instead</span>
+<span class="pl-c"> * --- NOTE --- */</span>
+<span class="pl-c">/* lastly if we wanted the person to greet us then we would do */</span>
+<span class="pl-s1">person</span><span class="pl-kos">.</span><span class="pl-en">greeting</span><span class="pl-kos">(</span><span class="pl-kos">)</span></pre></div>
+<h1>
+<a id="user-content-warning-everything-in-javascript-is-a-object-warning" class="anchor" href="#warning-everything-in-javascript-is-a-object-warning" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji> <code>everything in Javascript is a object</code> <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji>
+</h1>
+<h3>
+<a id="user-content-arrays" class="anchor" href="#arrays" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Arrays</h3>
+<p>List-like objects <br>
+<g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji> instead of it starting from 1, it starts from 0 <g-emoji class="g-emoji" alias="warning" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png">⚠️</g-emoji></p>
+<h4>
+<a id="user-content-example-4" class="anchor" href="#example-4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h4>
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> <span class="pl-s1">groceries</span> <span class="pl-c1">=</span> <span class="pl-kos">[</span><span class="pl-s">'eggs'</span><span class="pl-kos">,</span> <span class="pl-s">'milk'</span><span class="pl-kos">,</span> <span class="pl-s">'butter'</span><span class="pl-kos">,</span> <span class="pl-s">'cheese'</span><span class="pl-kos">,</span> <span class="pl-s">'bread'</span><span class="pl-kos">]</span> <span class="pl-c">// a basic list with 5 items</span>
+<span class="pl-c">/* to add something at the end you would do */</span>
+<span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-en">push</span><span class="pl-kos">(</span><span class="pl-s">'juice'</span><span class="pl-kos">)</span>
+<span class="pl-c">/* to delete something at the end you would do */</span>
+<span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-en">pop</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+<span class="pl-c">/* to add something at the beginning you would do */</span>
+<span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-en">unshift</span><span class="pl-kos">(</span><span class="pl-s">'juice'</span><span class="pl-kos">)</span>
+<span class="pl-c">/* to remove something at the beginning you would do */</span>
+<span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-en">shift</span><span class="pl-kos">(</span><span class="pl-kos">)</span>
+<span class="pl-c">/* to get the index of a item */</span>
+<span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-en">indexOf</span><span class="pl-kos">(</span><span class="pl-s">'milk'</span><span class="pl-kos">)</span> <span class="pl-c">/* equals to 1 */</span>
+<span class="pl-c">/* finally to get the length of the array */</span>
+<span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-c1">length</span>
+<span class="pl-c">/* to access the last thing in the array */</span>
+<span class="pl-k">var</span> <span class="pl-s1">last</span> <span class="pl-c1">=</span> <span class="pl-s1">groceries</span><span class="pl-kos">[</span><span class="pl-s1">groceries</span><span class="pl-kos">.</span><span class="pl-c1">length</span> <span class="pl-c1">-</span> <span class="pl-c1">1</span><span class="pl-kos">]</span></pre></div>
+<h3>
+<a id="user-content-classes" class="anchor" href="#classes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Classes</h3>
+<p>A template for objects</p>
+<h3>
+<a id="user-content-example-5" class="anchor" href="#example-5" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Example</h3>
+<div class="highlight highlight-source-js"><pre></pre></div>
+

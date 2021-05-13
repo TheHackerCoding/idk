@@ -1,0 +1,95 @@
+<h1 id="language-javascript-the-most-basic-and-entry-level-language-to-learn-i-think-_-_-">Language: Javascript (the most basic and entry level language to learn I think ¯_◉‿◉_/¯)</h1>
+<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="comments">Comments</h3>
+<p>To annotate your code or organize it</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-javascript"><div class="highlight"><pre><span class="c1">// Single-line comment</span>
+
+<span class="cm">/* Multiline</span>
+<span class="cm">comment */</span>
+</pre></div>
+
+</code></pre>
+<h3 id="variable-or-var">Variable or <code>var</code></h3>
+<p>You can use variables to store and get data</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">x</span><span class="p">;</span> <span class="c1">// to make the variable x but not put anything in it  </span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// a variable x with the value of the number 5 which can be changed</span>
+<span class="kr">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// a variable x with the value of the number which cant be changed </span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="s1">&#39;five&#39;</span><span class="p">;</span> <span class="c1">// a variable x with the value of the string &#39;five&#39; </span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span> <span class="c1">// a variable x with the value of a array with the contents of the numbers 1, 2, and 3 </span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">name</span><span class="o">:</span> <span class="s2">&quot;John Doe&quot;</span><span class="p">,</span>
+<span class="p">}</span> <span class="c1">// a variable x with the value of a object with the key:value pair of name to John Doe </span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span>
+<span class="p">}</span> <span class="cm">/* </span>
+<span class="cm">  a variable x with the value of a function when executed will print hello to the console </span>
+<span class="cm">  NOTE: if you have a variable with a function in it as a value, instead of doing &#39;x&#39;, you would do &#39;x()&#39;</span>
+<span class="cm">*/</span>
+</pre></div>
+
+</code></pre>
+<h3 id="functions">Functions</h3>
+<p>A chunk of code to do something</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-javascript"><div class="highlight"><pre><span class="kd">function</span> <span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+<span class="p">}</span> <span class="c1">// a function called log which when executed with a arguments (the x), it would execute console.log(x)</span>
+<span class="cm">/* You would run it by doing */</span>
+<span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span> <span class="cm">/* which equals to */</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">);</span>
+</pre></div>
+
+</code></pre>
+<h3 id="objects">Objects</h3>
+<p>Like a variable but is a collection of related data and/or functionality</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">person</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">firstName</span><span class="o">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+  <span class="nx">lastName</span><span class="o">:</span> <span class="s2">&quot;Doe&quot;</span><span class="p">,</span>
+  <span class="nx">greeting</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello! I&#39;m &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">+</span> <span class="s2">&quot;.&quot;</span><span class="p">)</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="cm">/* now if we wanted get the person&#39;s first name we would do */</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">firstName</span>
+<span class="cm">/* or if we wanted to get the person&#39;s last name we would do */</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">lastName</span>
+<span class="cm">/* --- NOTE --- </span>
+<span class="cm"> * you dont have to put a dot; you can also do person[&#39;lastName&#39;] instead</span>
+<span class="cm"> * --- NOTE --- */</span>
+<span class="cm">/* lastly if we wanted the person to greet us then we would do */</span>
+<span class="nx">person</span><span class="p">.</span><span class="nx">greeting</span><span class="p">()</span>
+</pre></div>
+
+</code></pre>
+<h1 id="-warning-everything-in-javascript-is-a-object-warning-">:warning: <code>everything in Javascript is a object</code> :warning:</h1>
+<h3 id="arrays">Arrays</h3>
+<p>List-like objects &lt;br&gt;<br>:warning: instead of it starting from 1, it starts from 0 :warning:</p>
+<h4 id="example">Example</h4>
+<pre><code class="lang-javascript"><div class="highlight"><pre><span class="kd">var</span> <span class="nx">groceries</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;eggs&#39;</span><span class="p">,</span> <span class="s1">&#39;milk&#39;</span><span class="p">,</span> <span class="s1">&#39;butter&#39;</span><span class="p">,</span> <span class="s1">&#39;cheese&#39;</span><span class="p">,</span> <span class="s1">&#39;bread&#39;</span><span class="p">]</span> <span class="c1">// a basic list with 5 items</span>
+<span class="cm">/* to add something at the end you would do */</span>
+<span class="nx">groceries</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="s1">&#39;juice&#39;</span><span class="p">)</span>
+<span class="cm">/* to delete something at the end you would do */</span>
+<span class="nx">groceries</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span>
+<span class="cm">/* to add something at the beginning you would do */</span>
+<span class="nx">groceries</span><span class="p">.</span><span class="nx">unshift</span><span class="p">(</span><span class="s1">&#39;juice&#39;</span><span class="p">)</span>
+<span class="cm">/* to remove something at the beginning you would do */</span>
+<span class="nx">groceries</span><span class="p">.</span><span class="nx">shift</span><span class="p">()</span>
+<span class="cm">/* to get the index of a item */</span>
+<span class="nx">groceries</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="s1">&#39;milk&#39;</span><span class="p">)</span> <span class="cm">/* equals to 1 */</span>
+<span class="cm">/* finally to get the length of the array */</span>
+<span class="nx">groceries</span><span class="p">.</span><span class="nx">length</span>
+<span class="cm">/* to access the last thing in the array */</span>
+<span class="kd">var</span> <span class="nx">last</span> <span class="o">=</span> <span class="nx">groceries</span><span class="p">[</span><span class="nx">groceries</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+</code></pre>
+<h3 id="classes">Classes</h3>
+<p>A template for objects</p>
+<h3 id="example">Example</h3>
+<pre><code class="lang-javascript"><div class="highlight"><pre>
+</pre></div>
+
+</code></pre>
